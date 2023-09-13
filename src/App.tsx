@@ -9,7 +9,6 @@ import Card from './components/Card';
 import PartnerCard from './components/Partner';
 import ProductCard from './components/Product';
 import Brands from './components/Brands';
-import Footer from './partials/Footer';
 
 import './scss/App.scss';
 
@@ -79,6 +78,7 @@ const App = () => {
 
           <div className='carousel' ref={carousel}>
             <ArrowLeftIcon className='arrow-left' onClick={handleLeftClick} />
+
             <div className='cards'>
               {
                 products.length > 0 
@@ -95,7 +95,8 @@ const App = () => {
                   ) 
                 : <p>Carregando produtos...</p>
               }
-            </div> 
+             </div> 
+
             <ArrowRightIcon className='arrow-right' onClick={handleRightClick} />
           </div>
         </section>
@@ -126,8 +127,6 @@ const App = () => {
           <Brands />
         </section>
       </main>
-
-      <Footer />
     </>
   );
 }
