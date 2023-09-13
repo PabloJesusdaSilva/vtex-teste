@@ -1,11 +1,7 @@
-import axios from 'axios';
-import { useEffect, useState, useRef } from 'react';
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
-
 import Header from './partials/Header';
 import Banner from './components/Banner';
 import CategoryCard from './components/Category-card';
-import Card from './components/Card';
+import Carousel from './partials/Carousel';
 import PartnerCard from './components/Partner';
 import ProductCard from './components/Product';
 import Brands from './components/Brands';
@@ -13,36 +9,7 @@ import Footer from './partials/Footer';
 
 import './scss/App.scss';
 
-interface Product {
-  id: any
-  photo: any
-  descriptionShort: string
-  oldPrice: string
-  price: string
-}
-
 const App = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-
-  const carousel = useRef(null);
-
-  useEffect(() => {
-    axios.get('https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json')
-      .then(response => response.data)
-      .then(data => {
-        setProducts(data.products)
-      })
-  },[])
-
-  const handleLeftClick = (e: any) => {
-    e.preventDefault();
-    console.log(carousel)
-  }
-  
-  const handleRightClick = (e: any) => {
-    e.preventDefault()
-  }
-
   return(
     <>
       <Header />
@@ -77,29 +44,7 @@ const App = () => {
             </tr>
           </table>
 
-          <div className='carousel' ref={carousel}>
-            <ArrowLeftIcon className='arrow-left' onClick={handleLeftClick} />
-
-            <div className='cards'>
-              {
-                products.length > 0 
-                ? (
-                    products.map(prod => (
-                      <Card
-                        key={prod.id}
-                        photo={prod.photo}
-                        description={prod.descriptionShort}
-                        oldPrice={prod.oldPrice}
-                        price={prod.price}
-                      />
-                    ))
-                  ) 
-                : <p>Carregando produtos...</p>
-              }
-             </div> 
-
-            <ArrowRightIcon className='arrow-right' onClick={handleRightClick} />
-          </div>
+          <Carousel />
         </section>
 
         <section className='partner-section'>

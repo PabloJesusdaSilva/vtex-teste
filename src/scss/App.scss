@@ -46,25 +46,9 @@
   .carousel {
     display: flex;
     justify-content: center;
-    width: 99%;
+    width: 100%;
     margin-top: 30px;
     overflow-x: visible;
-
-    .arrow-left {
-      visibility: hidden;
-      width: 100px;
-    }
-    
-    .arrow-right {
-      visibility: hidden;
-      width: 100px;
-    }
-
-    .cards {
-      display: flex;
-      padding: 6px;
-      overflow-x: scroll;
-    }
   }
 }
 
