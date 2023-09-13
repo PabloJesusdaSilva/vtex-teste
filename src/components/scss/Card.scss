@@ -1,0 +1,60 @@
+@import '../../scss/variables.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 500px;
+  padding: 14px;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
+
+  .card-description {
+    width: 245px;
+    margin-top: 22px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #3F3F40;
+  }
+
+  .old-price {
+    margin: 22px 0 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-line: line-through;
+    color: #808080;
+  }
+
+  .new-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3F3F40;
+  }
+
+  .installments-price {
+    margin: 12px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3F3F40;
+  }
+
+  .frete {
+    font-size: 12px;
+    font-weight: 400;
+    color: $color-primary;
+  }
+
+  .button {
+    width: 245px;
+    height: 44px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: #FFF;
+  }
+}
