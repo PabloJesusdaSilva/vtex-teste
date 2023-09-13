@@ -1,14 +1,13 @@
-import { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
-import { 
-  ArrowLeftIcon,
-  ArrowRightIcon
-} from '@heroicons/react/24/outline';
+import { useEffect, useState, useRef } from 'react';
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 import Header from './partials/Header';
 import Banner from './components/Banner';
 import CategoryCard from './components/Category-card';
 import Card from './components/Card';
+import PartnerCard from './components/Partner';
+import ProductCard from './components/Product';
 
 import './scss/App.scss';
 
@@ -98,6 +97,28 @@ const App = () => {
              </div> 
 
             <ArrowRightIcon className='arrow-right' onClick={handleRightClick} />
+          </div>
+        </section>
+
+        <section className='partner-section'>
+          <div className='partner-cards'>
+            <PartnerCard />
+            <PartnerCard />
+          </div>
+
+          <div className='product-title'>
+            <hr className='title-bar' />
+            <h2 className='title-section'>Produtos Selecionados</h2>
+            <hr className='title-bar' />
+          </div>
+
+          <div>
+            <span className='product-subtitle'>Ver todos</span>
+          </div>
+
+          <div className='products-card'>
+            <ProductCard />
+            <ProductCard />
           </div>
         </section>
       </main>
