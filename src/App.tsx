@@ -9,6 +9,7 @@ import Card from './components/Card';
 import PartnerCard from './components/Partner';
 import ProductCard from './components/Product';
 import Brands from './components/Brands';
+import Footer from './partials/Footer';
 
 import './scss/App.scss';
 
@@ -127,6 +128,8 @@ const App = () => {
           <Brands />
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
