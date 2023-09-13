@@ -8,6 +8,7 @@ import CategoryCard from './components/Category-card';
 import Card from './components/Card';
 import PartnerCard from './components/Partner';
 import ProductCard from './components/Product';
+import Brands from './components/Brands';
 
 import './scss/App.scss';
 
@@ -120,6 +121,10 @@ const App = () => {
             <ProductCard />
             <ProductCard />
           </div>
+        </section>
+
+        <section className='brands-section'>
+          <Brands />
         </section>
       </main>
     </>
