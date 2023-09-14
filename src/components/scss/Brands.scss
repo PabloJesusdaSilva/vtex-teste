@@ -31,5 +31,19 @@
       background: url('../../assets/logo.jpg') no-repeat;
       background-position: 50%;
     }
+    
+    .button-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 140px;
+      width: 56px;
+      height: 56px;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 6px 20px 4px rgba(0, 0, 0, 0.22);
+      color: #5E8EC6;
+    }
   }
 }

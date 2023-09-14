@@ -1,3 +1,5 @@
+import { ChevronRightIcon } from '@heroicons/react/24/outline'
+
 import './scss/Brands.scss';
 
 const Brands = () => {
@@ -12,6 +14,10 @@ const Brands = () => {
         <div className='logo'/>
         <div className='logo'/>
         <div className='logo'/>
+
+        <button className='button-icon'>
+          <ChevronRightIcon className='icon' />
+        </button>
       </div>
     </article>
   )

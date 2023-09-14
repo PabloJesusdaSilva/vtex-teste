@@ -27,12 +27,12 @@ const ModalCard = ({ handleClose, image, title, price }: Props) => {
             <span className='card-detail'>Veja mais detalhes do produto &gt;</span>
 
             <div className='card-counter'>
-               <span>-</span>
-               <span>1</span>
-               <span>+</span>
+               <span className='subtraction'>-</span>
+               <span className='current-value'>1</span>
+               <span className='addition'>+</span>
             </div>
 
-            <button className='card-button'>Comprar</button>
+            <button className='card-button' onClick={handleClose}>Comprar</button>
          </div>
       </article>
    );

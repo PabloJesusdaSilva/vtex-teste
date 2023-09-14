@@ -11,15 +11,21 @@ interface Props {
   price: string
 }
 
+const root = document.querySelector('#root');
+const shadow = document.createElement('div');
+
 const Card = ({photo, description, oldPrice, price}: Props) => {
   const [openModal, setOpenModal] = useState(false);
+  root?.appendChild(shadow)
 
   const handleOpenModal = (): void => {
     setOpenModal(!openModal);
+    shadow.classList.add('shadow-box');
   }
-
+  
   const handleCloseModal = (): void => {
     setOpenModal(!openModal);
+    shadow.classList.remove('shadow-box');
   }
 
   return(
