@@ -34,8 +34,8 @@ const Card = ({photo, description, oldPrice, price}: Props) => {
         <img src={photo} alt='Foto ilustrativa do produto' />
         <p className='card-description'>{description}.</p>
 
-        <span className='old-price'>R${oldPrice}</span>
-        <span className='new-price'>R${price}</span>
+        <span className='old-price'>R$ {oldPrice}</span>
+        <span className='new-price'>R$ {price}</span>
         <span className='installments-price'>ou 2x de R$ 49,95 sem juros</span>
         <span className='frete'>Frete grátis</span>
 
