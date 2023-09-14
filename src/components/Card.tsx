@@ -1,3 +1,7 @@
+import { useState } from 'react';
+
+import ModalCard from './ModalCard';
+
 import './scss/Card.scss';
 
 interface Props {
@@ -8,6 +12,16 @@ interface Props {
 }
 
 const Card = ({photo, description, oldPrice, price}: Props) => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = (): void => {
+    setOpenModal(!openModal);
+  }
+
+  const handleCloseModal = (): void => {
+    setOpenModal(!openModal);
+  }
+
   return(
     <>
       <article className='card'>
@@ -19,7 +33,18 @@ const Card = ({photo, description, oldPrice, price}: Props) => {
         <span className='installments-price'>ou 2x de R$ 49,95 sem juros</span>
         <span className='frete'>Frete grátis</span>
 
-        <button className='button'>Comprar</button>
+        <button className='button' onClick={handleOpenModal}>Comprar</button>
+
+        {
+          openModal 
+            ? <ModalCard 
+                handleClose={handleCloseModal}
+                image={photo}
+                title={description}
+                price={price}
+              />
+            : ''
+        }
       </article>
     </>
   );

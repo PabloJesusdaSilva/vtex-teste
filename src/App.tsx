@@ -18,6 +18,7 @@ const App = () => {
         <Categories />
         <CardSection />
         <PartnerSection />
+
         <section className='brands-section'>
           <Brands />
         </section>
@@ -26,6 +27,6 @@ const App = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

@@ -32,7 +32,7 @@ const ProductCards = () => {
                   key={prod.id}
                   photo={prod.photo}
                   description={prod.descriptionShort}
-                  oldPrice={prod.oldPrice}
+                  oldPrice=' 7.000'
                   price={prod.price}
                 />
               ))
