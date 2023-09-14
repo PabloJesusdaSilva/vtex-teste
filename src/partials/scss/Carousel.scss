@@ -1,6 +1,36 @@
-.cards {
+@import '../../scss/variables.scss';
+
+.carousel-cards {
   display: flex;
-  width: 89%;
-  padding: 6px;
-  overflow-x: scroll;
+  justify-content: center;
+  width: 100%;
+  
+  .arrow-left {
+    position: relative;
+    right: 8px;
+    width: 50px;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  
+  .arrow-right {
+    position: relative;
+    left: 8px;
+    width: 50px;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .cards {
+    display: flex;
+    width: 90%;
+    padding: 12px;
+    overflow-x: hidden;
+  }
 }
