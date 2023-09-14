@@ -1,0 +1,49 @@
+@import '../../scss/variables.scss';
+
+.products-cards {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin-top: 70px;
+ 
+   .product-title {
+     display: flex;
+ 
+     .title-bar {
+       width: 360px;
+       height: 2px;
+       margin-top: 20px;
+       color: #DEDEDE;
+     }
+ 
+     .title-section {
+       padding: 0 20px;
+       font-size: 30px;
+       font-weight: 700;
+       color: $color-primary;
+     }
+   }
+ 
+   .related-products {
+     width: 80%;
+     margin: 20px 0;
+ 
+     tr {
+       text-align: center;
+ 
+       td {
+         padding: 10px 50px;
+         border-color: #BDBDBD;
+       }
+     }
+   }
+ 
+   .carousel {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     margin-top: 30px;
+     overflow-x: visible;
+   }
+ }
