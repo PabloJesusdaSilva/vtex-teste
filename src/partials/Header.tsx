@@ -4,6 +4,7 @@ import {
   CreditCardIcon,
   MagnifyingGlassIcon,
   HeartIcon,
+  ArchiveBoxArrowDownIcon,
   UserCircleIcon,
   ShoppingCartIcon,
   StarIcon
@@ -30,14 +31,16 @@ const Header = () => {
       </ul>
 
       <div className='search-bar'>
-        <img src='../assets/.jpg' width={200} height={200} alt='Logo da página' />
+        <div className='logo' />
         <div className='input-search'>
           <input type='text' placeholder='O que você está buscando?' />
           <MagnifyingGlassIcon className='input-icon' />
         </div>
 
         <ul className='navigation-bar'>
-          
+          <li>
+            <ArchiveBoxArrowDownIcon className='icon' />
+          </li>
           <li>
             <HeartIcon className='icon' />
           </li>
