@@ -1,8 +1,8 @@
-import './scss/Partner.scss';
+import './scss/Product.scss';
 
-const Partner = () =>{
+const ProductCard = () =>{
   return(
-    <article className='partner-card'>
+    <article className='product-card'>
       <div className='shadow' />
       <h4 className='card-title'>Parceiros</h4>
       <p className='card-description'>Lorem ipsum dolor sit amet, consectetur</p>
@@ -12,4 +12,4 @@ const Partner = () =>{
   );
 }
 
-export default Partner;
+export default ProductCard;

@@ -1,9 +1,9 @@
 import Header from './partials/Header';
 import Banner from './components/Banner';
-import CategoryCard from './components/Category-card';
 import Carousel from './partials/Carousel';
-import PartnerCard from './components/Partner';
-import ProductCard from './components/Product';
+import Categories from './partials/Categories';
+import PartnerCard from './components/PartnerCard';
+import ProductCard from './components/ProductCard';
 import Brands from './components/Brands';
 import Footer from './partials/Footer';
 
@@ -16,15 +16,7 @@ const App = () => {
 
       <main>
         <Banner />
-        <section className='categories'>
-          <CategoryCard icon='fa-solid fa-laptop' description='Tecnologia' />
-          <CategoryCard icon='fa-solid fa-shop' description='Supermercado' />
-          <CategoryCard icon='fa-solid fa-wine-bottle' description='Bebidas' />
-          <CategoryCard icon='fa-solid fa-screwdriver-wrench' description='Ferramentas' />
-          <CategoryCard icon='fa-solid fa-heart-circle-check' description='Saúde' />
-          <CategoryCard icon='fa-solid fa-person-running' description='Esporte e Fitness' />
-          <CategoryCard icon='fa-solid fa-shirt' description='Moda' />
-        </section>
+        <Categories />
 
         <section className='products-cards'>
           <div className='product-title'>
