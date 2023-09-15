@@ -1,8 +1,8 @@
 import './scss/Footer.scss';
 
 const Footer = () => {
-  return(
-    <footer className='footer'>
+   return(
+      <footer className='footer'>
       <div className='footer-description'>
         <article className='footer-about'>
           <h4 className='footer-title'>
@@ -65,7 +65,7 @@ const Footer = () => {
         <div className='footer-partnership' />
       </div>
     </footer>    
-  );
+   );
 }
 
 export default Footer;
