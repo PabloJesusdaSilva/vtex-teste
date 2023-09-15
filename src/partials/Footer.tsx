@@ -51,7 +51,7 @@ const Footer = () => {
             Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia lorem ipsum
           </p>
           <div>
-            <input className='form-input' type='text' />
+            <input className='form-input' type='text' placeholder='Seu e-mail' />
             <button className='form-button'>ok</button>
           </div>
         </form>
