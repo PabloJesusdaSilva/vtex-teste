@@ -1,4 +1,5 @@
 @import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
 
 .products-category {
   display: flex;
@@ -19,9 +20,7 @@
     
     
     .product-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include centralization;
       width: 120px;
       height: 128px;
       font-size: 40px;
