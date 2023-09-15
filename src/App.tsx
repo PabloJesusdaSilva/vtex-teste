@@ -1,5 +1,5 @@
 import Header from './partials/Header';
-import Footer from './partials/Footer';
+import Footer from './partials/footer';
 import Categories from './partials/Categories';
 import CardSection from './partials/CardSection';
 import PartnerSection from './partials/PartnerSection';
