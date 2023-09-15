@@ -17,6 +17,7 @@ interface Product {
 const ProductCards: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  
   const itemsForPage = 4;
 
   const pages = Math.ceil(products.length / itemsForPage);

@@ -6,13 +6,10 @@ import PartnerSection from './partials/PartnerSection';
 import Brands from './components/Brands';
 import Footer from './partials/Footer';
 
-import './scss/App.scss';
-
 const App = () => {
   return(
     <>
       <Header />
-
       <main>
         <Banner />
         <Categories />
@@ -23,10 +20,9 @@ const App = () => {
           <Brands />
         </section>
       </main>
-
       <Footer />
     </>
   );
-};
+}
 
 export default App;
