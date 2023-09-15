@@ -1,10 +1,11 @@
 import Header from './partials/Header';
-import Banner from './components/Banner';
+import Footer from './partials/Footer';
 import Categories from './partials/Categories';
 import CardSection from './partials/CardSection';
 import PartnerSection from './partials/PartnerSection';
+
+import Banner from './components/Banner';
 import Brands from './components/Brands';
-import Footer from './partials/Footer';
 
 const App = () => {
   return(
