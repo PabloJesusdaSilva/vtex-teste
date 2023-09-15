@@ -1,4 +1,5 @@
 @import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
 
 .product-card {
   display: flex;
@@ -41,15 +42,13 @@
   }
   
   .card-button {
+    @include styleButton;
     position: relative;
     z-index: 10;
     width: 131px;
     height: 48px;
     letter-spacing: 2;
     font-weight: 900;
-    border: none;
     border-radius: 10px;
-    background-color: $color-primary;
-    color: #FFFF;
   }
 }

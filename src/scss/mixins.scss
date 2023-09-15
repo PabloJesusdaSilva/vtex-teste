@@ -3,3 +3,12 @@
    justify-content: center;
    align-items: center;
 }
+
+@mixin styleButton {
+   border: none;
+   text-align: center;
+   text-transform: uppercase;
+   cursor: pointer;
+   background-color: $color-primary;
+   color: #FFF;
+}

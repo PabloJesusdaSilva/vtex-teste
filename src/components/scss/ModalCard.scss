@@ -1,4 +1,5 @@
 @import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 .modal-card {
@@ -93,17 +94,12 @@
       }
 
       .card-button {
+         @include styleButton;
          width: 245px;
          height: 44px;
          border-radius: 4px;
-         text-align: center;
          font-size: 14px;
          font-weight: 700;
-         text-transform: uppercase;
-         border: none;
-         cursor: pointer;
-         background-color: $color-primary;
-         color: #FFF;
       }
    }
 }

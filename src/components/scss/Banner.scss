@@ -1,4 +1,5 @@
 @import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
 
 .banner {
   position: relative;
@@ -35,17 +36,15 @@
   }
 
   .banner-button {
+    @include styleButton;
     position: relative;
     z-index: 10;
     width: 320px;
     height: 60px;
     margin-top: 35px;
-    border: none;
     border-radius: 6px;
     font-size: 18px;
     font-weight: 600;
-    cursor: pointer;
-    background-color: $color-primary;
-    color: #FFF;
+    text-transform: none;
   }
 }
