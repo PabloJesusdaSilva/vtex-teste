@@ -1,5 +1,5 @@
-import PartnerCard from '../components/PartnerCard';
-import ProductCard from '../components/ProductCard';
+import PartnerCard from '../../components/PartnerCard/PartnerCard';
+import ProductCard from '../../components/ProductCard/ProductCard';
 
 import './scss/PartnerSection.scss';
 

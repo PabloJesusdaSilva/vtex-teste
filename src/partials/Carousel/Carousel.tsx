@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
-import Card from '../components/Card';
+import Card from '../../components/Card/Card';
 
 import './scss/Carousel.scss';
 

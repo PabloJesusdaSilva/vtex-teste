@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import ModalCard from './ModalCard';
+import ModalCard from '../ModalCard/ModalCard';
 
 import './scss/Card.scss';
 
